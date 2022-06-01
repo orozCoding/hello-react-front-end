@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getGreetings, getRandomGreeting } from '../redux/reducers';
 
-const Home = () => {
+const Greeting = () => {
   const { greetings, randomGreeting } = useSelector((state) => state);
   const dispatch = useDispatch();
 
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Greeting;
